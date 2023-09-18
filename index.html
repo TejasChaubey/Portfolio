@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ef5d04bff.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tejas Portfolio</title>
+  </head>
+  <body>
+    
+    <div id="header">
+      <div class="container">
+        
+           
+        <nav>
+          <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+          <div class="logo">
+            <!-- <p>P<span>ortfolio.</span></p> -->
+            <h1 data-text="Portfolio...">Portfolio...</h1>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#header" >Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <div class="write">
+            <h1>Hi , I 'm <span>Tejas Chaubey</span><br /></h1>
+            <h2>I 'm <span>a FrontEnd Developer</span><br /></h2>
+          </div>
+          <div class="character">
+            <img src="images/hero.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here we will write about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/img.png" alt="MyImage" />
+            
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+
+            <p>
+              I am a student of engineering in Computer Science and a highly
+              motivated individual with a passion for technology, coding, and
+              problem solving. I have a strong interest in exploring and
+              understanding the world of computer science. I have a natural
+              aptitude for mathematics and logical problem solving which makes
+              me a great fit for this field of study. I am eager to learn new
+              technologies and always looking for ways to improve my skills.
+            </p
+            >
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                MySkills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                MyEducation
+              </p>
+              <p class="tab-links" onclick="opentab('myworks')">My Works</p>
+              <p class="tab-links" onclick="opentab('myachieves')">
+                MyAchievements
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />Frontend Designing</li>
+                <li><span>CSS</span><br />Frontend Designing</li>
+                <li><span>JavaScript</span><br />Fronetend designing</li>
+                <li><span>ReactJS</span><br />For Single Page Application</li>
+                <li><span>JAVA</span><br />Data Strcuture and Algorithms</li>
+                <li><span>PYTHON</span><br />Beginner level</li>
+                <li><span>C</span><br />Intermediate level</li>
+                <li><span>SQL</span><br />Database Queries</li>
+                <li><span>Salesforce</span><br />Creating ERMs</li>
+                <li>
+                  <span>AWS</span><br />AWS Academy Graduate - AWS Academy Cloud
+                  Foundations Certification
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>HighSchool</span><br />From U.P.Board with 87%<br />
+                  Passing year :-2018
+                </li>
+                <li>
+                  <span>InterMediate</span><br />From U.P.Board with 78%<br />Passing
+                  year :-2020
+                </li>
+                <li>
+                  <span>B.Tech</span><br />Persuing(4<sup>th</sup> year )<br />Branch:-CSE
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="myachieves">
+              <ul>
+                <li>
+                  <span>Internship</span><br />From OpenWeaver in web
+                  developement (Duration:-1 month)
+                </li>
+                <li>
+                  <span>Certifications <sup>*</sup></span>
+                  <br />
+                  <p>
+                    <a href="/images/CERTIFICATE FINAL CN.pdf" target="_blank"
+                      ><i
+                        class="fa-solid fa-shield-halved"
+                        style="color: rgb(255, 234, 0)"
+                      ></i
+                    ></a>
+                    From Coding Ninja in Python language
+                  </p>
+                  <br />
+                  <p>
+                    <a href="https://www.credly.com/go/NTZLOyw8" target="_blank"
+                      ><i
+                        class="fa-solid fa-shield-halved"
+                        style="color: rgb(255, 234, 0)"
+                      ></i
+                    ></a>
+                    AWS Academy Graduate - AWS Academy Cloud Foundations
+                    Certification
+                  </p>
+                  <br />
+                  <p>
+                    <a
+                      href="http://www.salesforce.com/trailblazer/tchaubey3"
+                      target="_blank"
+                      ><i
+                        class="fa-brands fa-salesforce"
+                        style="color: rgb(255, 234, 0)"
+                      ></i></a
+                    >Ranger Badge in Trailhead(Salesforce)
+                  </p>
+                  <br />
+                  <p style="color: rgb(235, 115, 115)">
+                    <sup>*</sup>click on icons before the certifications so that
+                    you will see my certificates.
+                  </p>
+                </li>
+                <li>
+                  <span>Data Structure & Algorithms</span><br />Solved 80+
+                  questions on GeekforGeeks online platform
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="myworks">
+              <ul>
+                <li>
+                  <span> Python Projects</span><br />Youtube Video Downloader<br />QRcode
+                  Generator
+                </li>
+                <li>
+                  <span>HTML , CSS &amp JS</span><br />MY Portfolio<br />To-Do
+                  App<br />Weather-App <br />A clone of spaceX name as "ASTRO"Z
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------services------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>We design the responsive pages and very beautifull Ui</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Designing</h2>
+            <p>
+              We design the application interfaces using html ,css and,
+              javascript
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------portfolio------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                It will help you to find by the weather of any city by searching
+                by city name
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work" />
+            <div class="layer">
+              <h3>T0 Do task</h3>
+              <p>You can provide structure to your day</p>
+              <a href="https://github.com/TejasChaubey/Todo" target="_blank" rel="noopener noreferrer"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work" />
+            <div class="layer">
+              <h3>Resume Portfolio</h3>
+              <p>
+                Here is the detailed knowledge about me that what I am and what
+                are my skills
+              </p>
+              <a
+                href="http://127.0.0.1:5500/Portfolio/index.html#header"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------ContactPage------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle"><u>Contact Me</u></h1>
+
+            <div class="social-icons">
+              <!-- <a href="mailto:chaubeytejas26@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a> -->
+              <acronym title="click here to mail me"
+                ><a
+                  href="mailto:chaubeytejas26@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-envelope"></i></a
+              ></acronym>
+              <acronym title="here is my linkedin ,click to show"
+                ><a
+                  href="https://www.linkedin.com/in/tejas-chaubey-538110259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i></a
+              ></acronym>
+              <acronym title="here is my github profile,click here."
+                ><a
+                  href="https://github.com/TejasChaubey"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-github"></i></a
+              ></acronym>
+              <acronym title="click here to whatsapp me"
+                ><a
+                  href=" https://wa.me/+919634415700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-whatsapp"></i></a
+              ></acronym>
+            </div>
+            <!-- <i class="fa-solid fa-download"></i>
+                    <a href="images/Tejas.pdf" download class="btn1">Download CV</a> -->
+            <button class="btn2">
+              <i class="fa-solid fa-download"></i
+              ><a href="images/Tejas.pdf" download> Download CV</a>
+            </button>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="8"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn1">Submit</button>
+        
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        // this event is to actige link and put color on bottom
+        document.getElementById(tabname).classList.add("active-tab");
+        // this documentis to shwo the content..
+      }
+    </script>
+    <script>
+      var sideme = document.getElementById("sidemenu");
+      function openmenu() {
+        sideme.style.right = "0";
+      }
+      function closemenu() {
+        sideme.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzhuLuVRp7aEQWWU5Xw_7kBx6KnwAP4LnxQC7kRmcHdH6Gd8ZQDvGotPku72FiZZlk/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
